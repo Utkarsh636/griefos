@@ -1,30 +1,7 @@
+import { jurisdictions } from "@/data/jurisdictions";
 export default function JurisdictionPage() {
-  const supportCenters = [
-    {
-      state: "Uttar Pradesh",
-      court: "District Court Gautam Buddha Nagar",
-      dlsa: "DLSA Gautam Buddha Nagar",
-      phone: "+91 120 000 0000",
-      maps:
-        "https://www.google.com/maps/search/District+Court+Gautam+Buddha+Nagar",
-    },
-    {
-      state: "Delhi",
-      court: "Tis Hazari District Court",
-      dlsa: "Delhi State Legal Services Authority",
-      phone: "+91 11 0000 0000",
-      maps:
-        "https://www.google.com/maps/search/Tis+Hazari+District+Court",
-    },
-    {
-      state: "Maharashtra",
-      court: "Mumbai City Civil Court",
-      dlsa: "Maharashtra State Legal Services Authority",
-      phone: "+91 22 0000 0000",
-      maps:
-        "https://www.google.com/maps/search/Mumbai+City+Civil+Court",
-    },
-  ];
+  const supportCenters = jurisdictions;
+
 
   return (
     <main className="min-h-screen bg-slate-950 text-white px-6 py-12">
