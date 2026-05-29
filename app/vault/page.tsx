@@ -22,8 +22,33 @@ export default function VaultPage() {
 
       const text = await extractTextFromImage(selectedFile);
 
-      setExtractedText(text);
-      setStatus("Extraction complete.");
+setStatus("Analyzing with Gemini...");
+
+const response = await fetch("/api/extract", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    ocrText: text,
+  }),
+});
+console.log("Calling Gemini...");
+
+const aiResult = await response.json();
+
+console.log("FETCH RESPONSE:", response);
+console.log("AI RESULT:", aiResult);
+
+const parsed = JSON.parse(aiResult.result);
+
+localStorage.setItem(
+  "latestExtraction",
+  JSON.stringify(parsed)
+);
+
+setExtractedText(text);
+setStatus("AI extraction complete.");
     } catch (error) {
       console.error(error);
       setStatus("OCR failed.");

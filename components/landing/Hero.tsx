@@ -25,6 +25,7 @@ export default function Hero() {
               legal procedures, deadlines, and documentation
               through AI-powered recovery roadmaps.
             </p>
+            
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link

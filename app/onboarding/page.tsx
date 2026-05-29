@@ -96,7 +96,18 @@ export default function OnboardingPage() {
               className="w-full rounded-2xl border border-white/10 bg-slate-900 px-5 py-4 text-white"
             >
               <option value="">Select state</option>
-              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="">Select State</option>
+
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Delhi">Delhi</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="West Bengal">West Bengal</option>
+<option value="Telangana">Telangana</option>
+<option value="Haryana">Haryana</option>
               <option value="Delhi">Delhi</option>
               <option value="Maharashtra">Maharashtra</option>
             </select>
