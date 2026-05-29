@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GriefOS
 
-## Getting Started
+**Guidance when families need clarity most.**
 
-First, run the development server:
+GriefOS is an AI-powered post-loss recovery platform designed to help families navigate legal, financial, and administrative processes after the loss of a loved one.
+
+Instead of searching through dozens of government portals, banks, insurance websites, and legal resources, users receive a personalized recovery roadmap based on their situation, assets, and jurisdiction.
+
+---
+
+## Problem
+
+When a family loses a loved one, they are often required to:
+
+* Claim bank accounts
+* Access provident fund benefits
+* Process insurance claims
+* Manage property succession
+* Find legal support
+* Track important deadlines
+
+These processes are fragmented across multiple organizations and are difficult to navigate during an emotionally stressful period.
+
+---
+
+## Solution
+
+GriefOS acts as a digital recovery assistant that helps users:
+
+* Generate personalized recovery roadmaps
+* Track important claim deadlines
+* Extract information from documents using OCR
+* Export recovery plans as PDFs
+* Access jurisdiction-specific legal support
+* Navigate post-loss administrative workflows
+
+---
+
+## Key Features
+
+### Personalized Recovery Roadmap
+
+Generate step-by-step action plans based on:
+
+* Relationship to the deceased
+* State / jurisdiction
+* Asset categories
+* Recovery requirements
+
+### OCR Document Intelligence
+
+Upload documents and automatically extract important information.
+
+### Deadline Tracking
+
+Identify and prioritize time-sensitive actions.
+
+### Recovery Kit Export
+
+Generate downloadable PDF recovery plans.
+
+### Jurisdiction Assistance (Upcoming)
+
+Locate nearby legal support services, DLSA contacts, district courts, and official resources.
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+
+### State Management
+
+* Zustand
+
+### OCR
+
+* Tesseract.js
+
+### PDF Generation
+
+* pdfmake
+
+### AI Layer (Planned)
+
+* Google Gemini API
+
+### Deployment
+
+* Vercel
+
+### Development Environment
+
+* GitHub Codespaces
+
+---
+
+## Project Structure
+
+```bash
+app/
+components/
+data/
+lib/
+types/
+public/
+```
+
+---
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Vision
 
-To learn more about Next.js, take a look at the following resources:
+GriefOS aims to reduce confusion during one of life's most difficult moments by transforming fragmented administrative processes into a guided, understandable recovery journey.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Status
 
-## Deploy on Vercel
+Current MVP includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Onboarding workflow
+* Roadmap generation
+* Deadline engine
+* OCR document extraction
+* PDF export
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Upcoming:
+
+* Jurisdiction support
+* Smart OCR parsing
+* AI-assisted personalization
+* Workspace persistence
+* Multi-state support
+
+```
+```
