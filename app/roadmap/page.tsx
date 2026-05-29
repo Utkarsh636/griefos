@@ -13,8 +13,8 @@ export default function RoadmapPage() {
 
   const roadmap = generateRoadmap(assets ?? []);
 
-  function handleExport() {
-    exportRecoveryPdf({
+  async function handleExport() {
+    await exportRecoveryPdf({
       deceasedName,
       relationship,
       state,
